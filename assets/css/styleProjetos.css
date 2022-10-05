@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3f344d;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important; 
+}
+
+
+/*Cabeçalho*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image:  linear-gradient(124.86deg, #957BB8 25.9%, #89C7CB 74.34%);      
+
+}
+
+.conteiner-head {
+    width: 990px;
+    display: flex;
+    justify-content: space-around; 
+    max-width: 1200px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.active,
+nav a:hover {
+    background-color: #CCBFD9;
+    color: #fff;
+}
+
+/*Conteúdo*/
+
+.conteudo-principal {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.conteiner-master,
+.conteiner-master2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+.title-page {
+    font-size: 40px ;
+}
+
+.conteiner-img,
+.conteiner-texto {
+    margin: 20px;
+}
+
+.conteiner-texto {
+    width: 50%;
+}
+
+.status-projeto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.descricao {
+    margin: 30px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*Rodapé*/
+footer{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    background-image:  linear-gradient(124.86deg, #957BB8 25.9%, #89C7CB 74.34%);      
+
+}
+
+.conteiner-rodape {
+    width: 990px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;   
+}
+
+.conteiner-rodape p {
+    color: #fff; 
+}

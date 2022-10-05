@@ -6,16 +6,25 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+
 header{
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 100%;
 }
 
 .conteiner-head {
     width: 990px;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;   
+    max-width: 1200px; 
 }
 
 .logo {
@@ -54,23 +63,28 @@ nav a:hover {
 #home,
 #projeto,
 #sobre {
-    height: 650px;
     display: flex;
     justify-content: center;
     color: #fff;
-    padding: 50px;    
+    padding: 50px;
+}
+
+.conteiner-conteudo-principal,
+.conteiner-conteudo-projeto,
+.conteiner-conteudo-sobre {
+    max-width: 1200px;
+    justify-content: center;
+
 }
 
 .conteiner-conteudo-principal {
-    width: 990px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;    
+    flex-direction: row;
+    justify-content: center;
 }
 
 .column {
     flex-direction: column;
-
 }
 
 #home{
@@ -78,7 +92,7 @@ nav a:hover {
 }
 
 .titulo {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .subtitulo {
@@ -87,9 +101,6 @@ nav a:hover {
 
 .jessica-avatar {
     width: 350px;
-    position: absolute;
-    right: 120px;
-    top: 50px;
 }
 
 .foto-jessica1 {
@@ -134,8 +145,11 @@ ol{
 }
 
 .conteiner-conteudo-projeto {
-    width: 990px;
     display: flex;
+}
+
+.projeto-titulo{
+    margin: 20px 0px;
 }
 
 .amostras {
@@ -154,14 +168,16 @@ ol{
     align-items: center;
 }
 
+.card-img-top {
+    height: 200px;
+}
+
 #sobre {
     background-color: #957BB8;
     border-top: 1px solid rgb(255, 255, 255);
-    height: 1300px;
 }
 
 .conteiner-conteudo-sobre {
-    width: 990px;
     display: flex;
 
 }
@@ -200,6 +216,11 @@ ol{
     flex-direction: column;
     justify-content: center;
     align-items:center;
+}
+
+#contato h5 {
+    border-top: 1px solid #fff;
+    padding-top: 30px;
 }
 
 .icones-social img {
@@ -241,25 +262,42 @@ footer{
 
 /*responsividade*/
 
-@media (max-width:1024px) {
-    #sobre {
-        height: auto;
+@media (max-width: 1180px) and (min-width:1008px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .titulo {
+        font-size: 65px;
     }
 }
 
-@media (max-width:812px) and (min-width: 600px) {
+@media (max-width:999px) and (min-width: 800px) {
     header{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 170px;
     }
     .conteiner-head{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: auto;
+        width: 990px;
     }
     .conteiner-conteudo-principal {
         width: auto;
@@ -267,10 +305,6 @@ footer{
         align-items: center;
         justify-content: center;
         flex-direction: column; 
-    }
-    .jessica-avatar {
-        position: static;
-        width: 300px;
     }
     #home,
     #projeto,
@@ -305,12 +339,32 @@ footer{
     }
 }
 
-@media (max-width:500px) and (min-width: 300px) {
+@media (max-width:799px) and (min-width: 600px) {
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 500px) {
     header{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 260px;
+        height: 300px;
     }
     .conteiner-head{
         display: flex;
@@ -332,10 +386,6 @@ footer{
         align-items: center;
         justify-content: center;
         flex-direction: column; 
-    }
-    .jessica-avatar {
-        position: static;
-        width: 300px;
     }
     #home,
     #projeto,
@@ -371,5 +421,137 @@ footer{
     }
     .conteiner-rodape p {
         font-size: 12px;
+    }
+
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-sobre {
+        justify-content: center;
+        width: 100%;
+    }
+    .descricao{
+        width: 100%;
+    }
+}
+
+@media (max-width: 399px) and (min-width: 300px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-sobre {
+        justify-content: center;
+        width: 100%;
+    }
+    .descricao{
+        width: 100%;
+    }
+}
+
+@media (max-width: 299px) and (min-width: 200px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-sobre {
+        justify-content: center;
+        width: 100%;
+    }
+    .descricao{
+        width: 100%;
     }
 }
