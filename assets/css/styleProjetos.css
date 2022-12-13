@@ -99,7 +99,16 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
+    justify-content: center;
+}
+
+.status {
+    width: 30px;
+    display: block;
+}
+
+.statusTexto {
+    margin: 0px;
 }
 
 .descricao {
