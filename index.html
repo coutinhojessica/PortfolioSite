@@ -6,250 +6,469 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site criado para exposição de projetos e trabalhos.">
     <link rel="shortcut icon" href="assets/imagens/LogoMarca/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
 
+    <!-- css - Device breakpoints -->
+    <link rel="stylesheet" href="assets/src/css/screenExtraSmall.css" > <!--media="screen and (max-width: 600px)" -->
+ 
+    <link rel="stylesheet" href="assets/src/css/screenMedium.css" media="screen and (min-width: 768px)">  
+    <link rel="stylesheet" href="assets/src/css/screenLarge.css" media="screen and (min-width: 992px)">  
+    <link rel="stylesheet" href="assets/src/css/screenExtraLarge.css" media="screen and (min-width: 1200px)">
     <link rel="stylesheet" href="assets/src/css/scrollbar.css">
-    <link rel="stylesheet" href="assets/src/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
 
     <title>Jéssica Coutinho</title>
-
-
-    
 </head>
+
 <body>
   
     <header id="topo" class="conteinerCabecalho">
-      <section>
         <img class="logo" src="assets/imagens/LogoMarca/logo.png" alt="Logo Marca">
+       
+      <nav id="conteninerMenu" class="conteninerMenu">
+        <button id="btnMenu" class="btnMenu">
+          <img class="iconMenu" src="assets/imagens/nav/bars-solid.svg" alt="Svg">
+        </button>
+          <ul class="menu" id="menu">
+            <li class="menuItens"> 
+              <a class="menuLink" href="#sobreMim">sobre mim</a>
+            </li>
+            <li class="menuItens"> 
+              <a class="menuLink" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="menuItens">
+              <a class="menuLink" href="#trabalhos">Trabalho</a>
+            </li>
+            <li class="menuItens"> 
+              <a class="menuLink" href="#projetos">Projetos</a>
+            </li>
+            <li class="menuItens"> 
+              <a class="menuLink" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
       </section>
-      <nav class="menu">
-        <a class="menuItens" href="#sobreMim">sobre mim</a>
-        <a class="menuItens" href="#habilidades">Habilidades</a>
-        <a class="menuItens" href="#trabalhos">Trabalho</a>
-        <a class="menuItens" href="#projetos">Projetos</a>
-        <a class="menuItens" href="#contato">Contatos</a>
-      </nav>
     </header>
 
     <main class="conteinerConteudo">
-      <section class="configConteudo">
-        <section class="conteinerApresentacao">
-          <div class="conteinerImgCurriculo">
-            <img class="imgJessica" src="assets/imagens/avatar/jc2.png" alt="Jéssica Coutinho">
-            <a class="curriculoIcon" href="./assets/files/Currículo Jéssica 2.pdf" download="currículo Jéssica Coutinho.pdf" type="application/pdf" target="_blank">
-              <i class="fa-sharp fa-solid fa-file-arrow-down fa-beat-fade" style="color: #202122;"></i>
-            Download currículo</a>
-          </div>
-          <div class="apresentacao">
-            <h2>Oi, sou a...</h2>
-            <div class="conteinerTitulo">
-              <h1 class="titulo">Jéssica Coutinho</h1>
-              <i class="fa-solid fa-code fa-2xl" style="color: #f28f38;"></i>
+        <section class="conteudoPrincipal">
+          <section class="conteinerApresentacao">
+            <div class="conteinerImgCurriculo">
+              <img class="imgJessica" src="assets/imagens/avatar/jc2.png" alt="Jéssica Coutinho">
+              <a class="curriculoIcon" href="./assets/files/Currículo Jéssica 2.pdf" download="currículo Jéssica Coutinho.pdf" type="application/pdf" target="_blank">
+                <i class="fa-sharp fa-solid fa-file-arrow-down fa-beat-fade" style="color: #202122;"></i>
+              Download currículo</a>
             </div>
-            <div class="conteinerProfissao">
-              <h4>Desenvolvedora front-end</h4>
-              <div class="tech">
-                <span>
-                  <i class="fa-brands fa-html5 fa-lg"></i>
-                </span>
-                <span>
-                  <i class="fa-brands fa-css3-alt fa-lg"></i>
-                </span>
-                <span>
-                  <i class="fa-brands fa-js fa-lg"></i>
-                </span>
-                <span>
-                  <i class="fa-brands fa-git fa-lg"></i>
-                </span>
+            <div class="apresentacao">
+              <h2>Oi, sou a...</h2>
+              <div class="conteinerTitulo">
+                <h1 class="titulo">Jéssica Coutinho</h1>
+                <i class="fa-solid fa-code fa-2xl" style="color: #f28f38;"></i>
               </div>
-            </div>
-            <div class="conteinerRedeSocial">
-              <a class="linkedin" href="http://www.linkedin.com/in/coutinhojessica" target="_blank" rel="noopener noreferrer">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                  <i class="fa-brands fa-linkedin-in fa-lg"></i>
-                  Linkedin
-              </a>
-              <a class="github" href="http://github.com/coutinhojessica" target="_blank" rel="noopener noreferrer">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                  <i class="fa-brands fa-github fa-lg"></i>
-                  GitHub
-              </a>
-              <a class="instagram" href="http://www.instagram.com/jessicamaiara.coutinho" target="_blank" rel="noopener noreferrer">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                  <i class="fa-brands fa-instagram fa-lg"></i>
-                  instagram
-              </a>
-            </div>
-          </div>
-
-        </section>
-        <section id="sobreMim" class="conteinerSobreMim">
-          <div class="textoSobreMim">
-            <h2>Sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, cum sed? Consequatur, obcaecati minima! Natus alias ratione eaque hic magni error cupiditate quam, sit saepe nulla, voluptate magnam consequuntur quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore magni perspiciatis nihil sit sapiente praesentium nam non numquam nesciunt, dolor accusantium aliquid, asperiores assumenda nulla velit modi amet vitae.</p>
-          </div>
-          <h3>Objetivos</h3>
-            <div class="conteudoObjetivos">
-              <div class="curtoPrazo">
-                <div class="descricaoCurtoPrazo">
-                  <h4>Em curto prazo</h4>
-                  <p>Ser desenvolvedora front-end.</p>
-                </div>
-                <div class="circleObjetivos">
-                  <i class="fa-solid fa-circle fa-xl"></i>
+              <div class="conteinerProfissao">
+                <h4>Desenvolvedora front-end</h4>
+                <div class="tech">
+                  <span>
+                    <i class="fa-brands fa-html5 fa-lg"></i>
+                  </span>
+                  <span>
+                    <i class="fa-brands fa-css3-alt fa-lg"></i>
+                  </span>
+                  <span>
+                    <i class="fa-brands fa-js fa-lg"></i>
+                  </span>
+                  <span>
+                    <i class="fa-brands fa-git fa-lg"></i>
+                  </span>
                 </div>
               </div>
-              <div class="medioPrazo">
-                <div class="circleObjetivos">
-                  <i class="fa-solid fa-circle fa-xl"></i>
-                </div>
-                <div class="descricaoMedioPrazo">
-                  <h4>Em médio prazo</h4>
-                  <p>Ser aprender sobre back-end.</p>
-                </div>
-              </div>
-              <div class="longoPrazo">
-                <div class="descricaoLongoPrazo">
-                  <h4>Em longo prazo</h4>
-                  <p>Ser desenvolvedora fullstack</p>
-                </div>
-                <div class="circleObjetivos"><i class="fa-solid fa-circle fa-xl"></i></div>
+              <div class="conteinerRedeSocial">
+                <a class="linkedin" href="http://www.linkedin.com/in/coutinhojessica" target="_blank" rel="noopener noreferrer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                    <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                    Linkedin
+                </a>
+                <a class="github" href="http://github.com/coutinhojessica" target="_blank" rel="noopener noreferrer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                    <i class="fa-brands fa-github fa-lg"></i>
+                    GitHub
+                </a>
+                <a class="instagram" href="http://www.instagram.com/jessicamaiara.coutinho" target="_blank" rel="noopener noreferrer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    instagram
+                </a>
               </div>
             </div>
-
-        </section>
-        <section id="habilidades" class="conteinerHabilidades">
-          <h2>Habilidades/Skills </h2>
-          <section class="contudoHabilidades">
-            <section class="skills">
-              <div class="conteinerTitleImg">
-                <div class="title">
-                  <h2>Front-end Developer</h2>
-                  <p>Mais de um ano de estudo</p>
+          </section>
+          <section id="sobreMim" class="conteinerSobreMim">
+            <div class="textoSobreMim">
+              <h2>Sobre mim</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, cum sed? Consequatur, obcaecati minima! Natus alias ratione eaque hic magni error cupiditate quam, sit saepe nulla, voluptate magnam consequuntur quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore magni perspiciatis nihil sit sapiente praesentium nam non numquam nesciunt, dolor accusantium aliquid, asperiores assumenda nulla velit modi amet vitae.</p>
+            </div>
+            <h3>Objetivos</h3>
+              <div class="conteudoObjetivos">
+                <div class="curtoPrazo" data-anime="curto">
+                  <div class="circleObjetivos">
+                    <i class="fa-solid fa-circle fa-xl"></i>
+                  </div>
+                  <div class="descricaoCurtoPrazo">
+          
+                    <h4>Em curto prazo</h4>
+                    <p>Ser desenvolvedora front-end.</p>
+                  </div>
                 </div>
-                <img src="assets/imagens/arrow/chevron-down-solid.svg" class="arrowCard" alt="svg">
+                <div class="medioPrazo" data-anime="medio">
+                  <div class="circleObjetivos">
+                    <i class="fa-solid fa-circle fa-xl"></i>
+                  </div>
+                  <div class="descricaoMedioPrazo">
+                    <h4>Em médio prazo</h4>
+                    <p>Ser aprender sobre back-end.</p>
+                  </div>
+                </div>
+                  <div class="longoPrazo" data-anime="longo">
+                    <div class="circleObjetivos"><i class="fa-solid fa-circle fa-xl"></i>
+                    </div>
+                    <div class="descricaoLongoPrazo">
+                      <h4>Em longo prazo</h4>
+                      <p>Ser desenvolvedora fullstack</p>
+                    </div>
+                  </div>
+                  </div>
+                 </section>
+
+           <section id="habilidades" class="conteinerHabilidades">
+            <h2>Habilidades/Skills </h2>
+            <section class="contudoHabilidades">
+              <section class="skills">
+                <div class="conteinerTitleImg">
+                  <div class="title">
+                    <h2>Front-end Developer</h2>
+                    <p>Mais de um ano de estudo</p>
+                  </div>
+                  <img src="assets/imagens/arrow/chevron-down-solid.svg" class="arrowCard" alt="svg">
+                </div>
+                <div class="conteudoSkills skillsHidden" id="s0">
+                 <div class="conteiner-skills">
+                   <div class="skills-box">
+                    <span class="skills-title">HTML5</span>
+                    <div class="skills-bar">
+                      <span class="skills-per html">
+                        <span class="tooltip">90%</span>
+                      </span>
+                    </div>
+                   </div>
+                   <div class="skills-box">
+                    <span class="skills-title">CSS3</span>
+                    <div class="skills-bar">
+                      <span class="skills-per css">
+                        <span class="tooltip">70%</span>
+                      </span>
+                    </div>
+                   </div>
+                   <div class="skills-box">
+                    <span class="skills-title">JavaScript</span>
+                    <div class="skills-bar">
+                      <span class="skills-per javascript">
+                        <span class="tooltip">40%</span>
+                      </span>
+                    </div>
+                   </div>
+                   <div class="skills-box">
+                    <span class="skills-title">Git</span>
+                    <div class="skills-bar">
+                      <span class="skills-per git">
+                        <span class="tooltip">65%</span>
+                      </span>
+                    </div>
+                   </div>
+                 </div>
+              </section>
+          
+              <section class="skills">
+                <div class="conteinerTitleImg">
+                  <div class="title">
+                    <h2>Soft Skills</h2>
+                    <p>Em constante desenvolvimento</p>
+                  </div>
+                  <img src="assets/imagens/arrow/chevron-down-solid.svg" class="arrowCard" alt="svg">
+                </div>
+                <div class="conteudoSkills skillsHidden" id="s1">
+                  <div class="conteiner-skills">
+                    <div class="skills-box">
+                     <span class="skills-title">Atitude</span>
+                     <div class="skills-bar">
+                       <span class="skills-per atitude">
+                         <span class="tooltip">90%</span>
+                       </span>
+                     </div>
+                    </div>
+                </div>
+                <div class="conteiner-skills">
+                  <div class="skills-box">
+                   <span class="skills-title">Comunicação</span>
+                   <div class="skills-bar">
+                     <span class="skills-per comunicacao">
+                       <span class="tooltip">100%</span>
+                     </span>
+                   </div>
+                  </div>
               </div>
-              <div class="conteudoSkills skillsHidden" id="s0">
-
-               <div class="conteiner-skills">
-                 <div class="skills-box">
-                  <span class="skills-title">HTML5</span>
-                  <div class="skills-bar">
-                    <span class="skills-per html">
-                      <span class="tooltip">90%</span>
-                    </span>
-                  </div>
+              <div class="conteiner-skills">
+                <div class="skills-box">
+                 <span class="skills-title">Aprender a aprender</span>
+                 <div class="skills-bar">
+                   <span class="skills-per aprender">
+                     <span class="tooltip">100%</span>
+                   </span>
                  </div>
-
-                 <div class="skills-box">
-                  <span class="skills-title">CSS3</span>
-                  <div class="skills-bar">
-                    <span class="skills-per css">
-                      <span class="tooltip">70%</span>
-                    </span>
-                  </div>
-                 </div>
-
-                 <div class="skills-box">
-                  <span class="skills-title">JavaScript</span>
-                  <div class="skills-bar">
-                    <span class="skills-per javascript">
-                      <span class="tooltip">40%</span>
-                    </span>
-                  </div>
-                 </div>
-
-                 <div class="skills-box">
-                  <span class="skills-title">Git</span>
-                  <div class="skills-bar">
-                    <span class="skills-per git">
-                      <span class="tooltip">65%</span>
-                    </span>
-                  </div>
-                 </div>
-
+                </div>
+            </div>
+            <div class="conteiner-skills">
+              <div class="skills-box">
+               <span class="skills-title">Resiliência</span>
+               <div class="skills-bar">
+                 <span class="skills-per resiliencia">
+                   <span class="tooltip">100%</span>
+                 </span>
                </div>
-                 
-
-            </section>
-            <section class="skills">
-              <div class="conteinerTitleImg">
-                <div class="title">
-                  <h2>Soft Skills</h2>
-                  <p>Em constante evolução</p>
+              </div>
+          </div>
+          <div class="conteiner-skills">
+            <div class="skills-box">
+             <span class="skills-title">Iniciativa própria</span>
+             <div class="skills-bar">
+               <span class="skills-per iniciativa">
+                 <span class="tooltip">100%</span>
+               </span>
+             </div>
+            </div>
+          </div>
+              </section>
+              <section class="skills">
+                <div class="conteinerTitleImg">
+                  <div class="title">
+                    <h2>Hard Skills</h2>
+                    <p>Aperfeicoando contiuamente</p>
+                  </div>
+                  <img src="assets/imagens/arrow/chevron-down-solid.svg"class="arrowCard" alt="svg">
                 </div>
-                <img src="assets/imagens/arrow/chevron-down-solid.svg" class="arrowCard" alt="svg">
-              </div>
-              <div class="conteudoSkills skillsHidden" id="s1">
-               ...
-              </div>
-            </section>
-            <section class="skills">
-              <div class="conteinerTitleImg">
-                <div class="title">
-                  <h2>Hard Skills</h2>
-                  <p>Aperfeicoando contiuamente</p>
+                <div class="conteudoSkills skillsHidden"  id="s2">
+                  <div class="conteinerCursos">
+                    <div class="nomeCurso">Analise e desenvolvimento de sistemas</div>
+                    <div class="nomeEmpresa">Estacio de Sá</div>
+                    <div class="ano">
+                      <p class="anoInicio">2015</p>
+                      <p class="anoFinal">2018</p>
+                    </div>
+                  </div>
+          
+                  <div class="conteinerCursos">
+                    <div class="nomeCurso">Javascript</div>
+                    <div class="nomeEmpresa">B7WEB</div>
+                    <div class="ano">
+                      <span class="anoInicio">2023</span>
+                      <span class="anoFinal">-</span>
+                    </div>
+                  </div>
+                  <div class="conteinerCursos">
+                    <div class="nomeCurso">Git</div>
+                    <div class="nomeEmpresa">B7WEB</div>
+                    <div class="ano">
+                      <span class="anoInicio">2022</span>
+                      <span class="anoFinal">2023</span>
+                    </div>
+                  </div>
+          
                 </div>
-                <img src="assets/imagens/arrow/chevron-down-solid.svg"class="arrowCard" alt="svg">
-              </div>
-              <div class="conteudoSkills skillsHidden"  id="s2">
-                ...
-              </div>
+              </section>
             </section>
           </section>
-        </section>
-        <section id="trabalho"></section>
-        <section id="projetos"></section>
 
-        <section id="contato" class="conteinerContato">
-          <h2 class="titleContato">Contato</h2>
-            <form class="contato" action="https://formsubmit.co/jessicacoutinho.developer@gmail.com" method="POST">
-              <div class=" conteinerInputLabel">
-                <label for="nome">
-                  Nome
-                </label>
-                <input class="inputBox" type="text" name="name" id="nome" autocomplete="off
-                "  required>
-               
+         <section id="trabalho" class="conteinerTrabalho">
+           <div class="conteinerTitleTrabalho">
+            <h2>Trabalho</h2>
+            <p>Experiência comprovada</p>
+           </div>
+           <div class="conteudoTrabalho" data-trabalho="trabalhoLeft">
+            <div class="procon">
+              <h3>Procon Estadual da Paraíba</h3>
+              <p>Suporte técnico adminstrativo</p>
+              <div class="periodo">
+                <p>02/2018</p>
+                <p>09/2018</p>
               </div>
-              <div class=" conteinerInputLabel">
-                <label for="email">
-                  E-mail
-                </label>
-                <input class="inputBox" type="email" id="email" name="email" autocomplete="off
-                " required>
               </div>
-              <div class="conteinerAreaLabel">
-                <label for="message">
-                  Assunto
-                </label>
-                <textarea id="message" class=" areaBox" name="message" cols="30" rows="10"></textarea>
+            
+            <div class="freehelper">
+              <h3>FreeHelper</h3>
+              <p>Desenvolvedora Front-end</p>
+              <div class="periodo">
+                <p>01/2023</p>
+                <p> __ </p>
+            </div>
+           </div>
+          </div>
+          </section>
+
+          <section id="projetos" class="conteinerProjetos">
+            <h2>Projetos</h2>
+            <p>Projetos em que atuei</p>
+            <div class="conteudoProjetos">
+              <button class="btnLeft control">
+                <i class="fa-regular fa-circle-left fa-lg"></i>
+              </button>
+              <button class="btnRight control">
+                <i class="fa-regular fa-circle-right fa-lg"></i>
+              </button>
+          
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="item visibleCarousel">
+                    <div class="card-title">Calculadora</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/calculadora.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">Card</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/card.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">Faq</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/faq.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">Gerador de Senha</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/geradorSenha.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">Frontend Mentor</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/Frontend-mentor.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">Landing Page</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/landing-page.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">Portfólio</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/portfolio1.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">Perfume</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/produto.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                  </div>
+                  <div class="item">
+                    <div class="card-title">QR Code</div>
+                    <div class="card-img">
+                      <img src="assets/imagens/carousel/qr-code.png" alt="" >
+                    </div>
+                  <div class="card-descricao">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nulla dolore modi.</p>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Saiba mais...</a>
+                </div>
+                </div>
               </div>
-              <input type="hidden" name="_next" value="https://http://192.168.0.5:5501/obrigado.html">
-              <button class="btnEnviar" type="submit">Enviar</button>
-                   </form>
+            </div>
+          </section>
+        </section>     
+        
+         <section id="contato" class="conteinerFormContato">
+          <div class="conteinerTitleForm">
+            <h2 class="titleContato">Contato</h2>
+          </div>
+            <div class="conteinerConteudoForm">
+              <form class="formContato" action="https://formsubmit.co/jessicacoutinho.developer@gmail.com" method="POST">
+                <div class=" conteinerInputLabel">
+                  <label for="nome">
+                    Nome
+                  </label>
+                  <input class="inputBox" type="text" name="name" id="nome" autocomplete="off"  required>
+                </div>
+                <div class=" conteinerInputLabel">
+                  <label for="email">
+                    E-mail
+                  </label>
+                  <input class="inputBox" type="email" id="email" name="email" autocomplete="off" required>
+                </div>
+                <div class="conteinerAreaLabel">
+                  <label for="message">
+                    Assunto
+                  </label>
+                  <textarea id="message" class=" areaBox" name="message"></textarea>
+                </div>
+                <input type="hidden" name="_next" value="https://http://192.168.0.5:5501/obrigado.html">
+                <button class="btnEnviar" type="submit">Enviar</button>
+              </form>
+            </div>
         </section>
-      </section>
-      <section>
+
+        <section>
         <div title="Voltar ao topo" class="link-topo">
           <a class="arrow" href="#topo">
             <i class="fa-solid fa-angle-up fa-bounce fa-xl"></i>

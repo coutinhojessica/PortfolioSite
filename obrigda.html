@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/imagens/LogoMarca/logo.png"
+      type="image/x-icon"
+    />
     <title>Obrigado</title>
-</head>
-<body>
 
-    <h1>obrigado</h1>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --preto: (#0d0d0d);
+        --laranja: (#f28f38);
+        --cinza: (#d6d6ea);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html {
+        min-height: 100vh;
+        max-width: 100vw;
+        font-size: 62.5%;
+      }
+
+      body {
+        margin: 0 auto;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0d0d0d;
+        padding: 10px 5px;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size: 3.8rem;
+        font-family: "Quantico", sans-serif;
+        width: 100%;
+        text-align: center;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+        line-height: 0.75em;
+        outline: none;
+        animation: animate 5s linear infinite;
+      }
+
+      @keyframes animate {
+        0%,
+        18%,
+        20%,
+        50.1%,
+        60%,
+        65.1%,
+        80%,
+        90.1%,
+        92% {
+          color: rgb(110, 110, 112);
+          text-shadow: none;
+        }
+        18.1%,
+        20.1%,
+        30%,
+        50%,
+        60.1%,
+        65%,
+        80.1%,
+        90%,
+        92.1%,
+        100% {
+          color: #f28f38;
+          text-shadow: 0 0 10px #ce8749, 0 0 20px #ce8749, 0 0 40px #ce8749,
+            0 0 80px #ce8749, 0 0 160px #ce8749;
+        }
+      }
+      p {
+        margin-top: 40px;
+        color: #f28f38;
+        padding: 10px 0;
+        font-size: 1.4rem;
+      }
+
+      img {
+        height: 450px;
+        padding: 10px 0;
+      }
+
+      a {
+        color: #f28f38;
+        background-color: #d6d6ea;
+        border: 2px solid #f28f38;
+        padding: 5px;
+        font-size: 1.2rem;       
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Obrigado(a)!</h1>
+    <p>Responderei o mais rápido possível.</p>
+    <a href="./index.html">
+      <i class="fa-solid fa-arrow-rotate-left"></i>
+      Retornar a home
+    </a>
+    <img
+      src="assets/imagens/avatar/jcObrigado-transparente.png"
+      alt="Jéssica Coutinho"
+    />
+    <script
+      class="hidden"
+      src="https://kit.fontawesome.com/e4d906df90.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
