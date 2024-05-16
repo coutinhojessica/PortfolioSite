@@ -1,0 +1,57 @@
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 45px;
+  }
+
+  .menu {
+    top: 60px;
+  }
+
+  .menu .menuLink {
+    font-size: 1.6rem;
+    padding: 2.1rem 0;
+  }
+  #conteninerMenu.active .menu {
+    row-gap: 20px;
+    height: calc(100vh - 60px);
+  }
+
+  .apresentacao h2 {
+    font-weight: 700;
+    color: #0d0d0d;
+    font-size: 1.6rem;
+  }
+
+  .titulo {
+    font-weight: 900;
+    color: #f28f38;
+    font-size: 3.2rem;
+    font-family: "Quantico", sans-serif;
+  }
+
+  .imgJessica {
+    width: 80%;
+  }
+  .curriculoIcon {
+    width: 60%;
+    font-size: 1.6rem;
+  }
+
+  .conteinerProfissao {
+    font-size: 1.6rem;
+  }
+
+  .conteinerRedeSocial a{
+    font-size: 1.4rem;
+  }
+
+  .conteinerSobreMim .textoSobreMim p{
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .conteinerTitleTrabalho h2{
+    font-size: 1.8;
+  }
+
+}

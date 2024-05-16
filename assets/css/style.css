@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.conteiner-head {
+    width: 990px;
+    display: flex;
+    justify-content: space-around;   
+    max-width: 1200px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #351D54;
+    font-size: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #351D54;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.active,
+nav a:hover {
+    background-color: #CCBFD9;
+    color: #fff;
+}
+
+/*Conteúdo*/
+
+#home,
+#projeto,
+#sobre {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 50px;
+}
+
+.conteiner-conteudo-principal,
+.conteiner-conteudo-projeto,
+.conteiner-conteudo-sobre {
+    max-width: 1200px;
+    justify-content: center;
+
+}
+
+.conteiner-conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#home{
+    background-image:  linear-gradient(124.86deg, #957BB8 25.9%, #89C7CB 74.34%);   
+}
+
+.titulo {
+    font-size: 70px;
+}
+
+.subtitulo {
+    font-size: 18px;
+}
+
+.jessica-avatar {
+    width: 350px;
+}
+
+.foto-jessica1 {
+    width: 250px;
+    height: 260px;
+    border-radius: 1000px;
+}
+
+.apresentacao1 {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.apresentacao1-titulo {
+    margin: 15px 0px;
+    padding-top: 25px;
+    border-top: 1px solid #fff;
+
+}
+
+ol{
+    padding: 0px;
+    margin: 0px;
+}
+
+.apresentacao1-atributos .atributo {
+    padding: 10px 0px;
+}
+
+.apresentacao1-titulo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#projeto {
+    background-image:  linear-gradient(124.64deg, #89C7CB 20.49%, #957BB8 88.5%);
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.conteiner-conteudo-projeto {
+    display: flex;
+}
+
+.projeto-titulo{
+    margin: 20px 0px;
+}
+
+.amostras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #351D54;
+}
+
+.amostras div {
+    margin: 0px 10px;
+}
+
+.foto-projeto{
+    width: 700px;
+    align-items: center;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+#sobre {
+    background-color: #957BB8;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.conteiner-conteudo-sobre {
+    display: flex;
+
+}
+
+.bloco-apresentacao{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.descricao {
+    text-align: justify;
+    width: 700px;
+    word-wrap: break-word;   
+}
+
+.titulo-carreira {
+    margin-bottom: 30px;
+}
+
+.habilidades {
+    margin: 30px 0px;
+}
+
+.habilidades .progress {
+    margin: 10px 0px;
+}
+
+.habilidades-titulo {
+    margin: 30px 0px;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#contato h5 {
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+}
+
+.icones-social img {
+    width: 25px;
+}
+
+.icones-social a {
+    text-decoration: none;
+}
+
+.link-topo a {
+    text-decoration: none;
+    color: #fff;
+    padding: 13px;
+    background-color: #351D54;
+    position: fixed;
+    right: 10px;
+    bottom: 65px;
+    border-radius: 5px ;
+    border: 1px solid #fff;
+}
+
+/*Rodapé*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+
+.conteiner-rodape {
+    width: 990px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;    
+}
+
+/*responsividade*/
+
+@media (max-width: 1180px) and (min-width:1008px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .titulo {
+        font-size: 65px;
+    }
+}
+
+@media (max-width:999px) and (min-width: 800px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .conteiner-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 990px;
+    }
+    .conteiner-conteudo-principal {
+        width: auto;
+        display: flex;   
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+    }
+    #home,
+    #projeto,
+    #sobre {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 50px;
+    }
+    .conteiner-conteudo-sobre,
+    .conteiner-conteudo-projeto {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .descricao{
+        word-wrap: break-word;
+        width: auto;
+    }
+    .amostras {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .amostras div{
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width:799px) and (min-width: 600px) {
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+    }
+    .conteiner-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .menu a{
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display:block ;
+    }
+    .conteiner-conteudo-principal {
+        width: auto;
+        display: flex;   
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+    }
+    #home,
+    #projeto,
+    #sobre {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 50px;
+    }
+    .conteiner-conteudo-sobre,
+    .conteiner-conteudo-projeto {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descricao{
+        word-wrap: break-word;
+        width: auto;
+    }
+    .amostras {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .amostras div{
+        margin: 10px 0px;
+    }
+    .conteiner-rodape p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-sobre {
+        justify-content: center;
+        width: 100%;
+    }
+    .descricao{
+        width: 100%;
+    }
+}
+
+@media (max-width: 399px) and (min-width: 300px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-sobre {
+        justify-content: center;
+        width: 100%;
+    }
+    .descricao{
+        width: 100%;
+    }
+}
+
+@media (max-width: 299px) and (min-width: 200px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu nav{
+        flex-direction: column;
+    }
+    .conteiner-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-projeto .amostras {
+        flex-direction: column;
+    }
+
+    .amostras div {
+        margin-top: 16px;
+    }
+    .conteiner-conteudo-sobre {
+        justify-content: center;
+        width: 100%;
+    }
+    .descricao{
+        width: 100%;
+    }
+}
